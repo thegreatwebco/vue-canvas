@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import { ComponentOptions } from 'vue'
 
 import propsUpdatedMixin from './props-updated'
@@ -31,7 +31,7 @@ export default {
       const parent = target.$parent
       assert(
         parent !== undefined,
-        `<${this._componentTag}> must be descendant of a context component`
+        `must be descendant of a context component`
       )
 
       return this.findEventBus(parent)

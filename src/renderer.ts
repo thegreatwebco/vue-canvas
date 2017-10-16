@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import { warn } from './utils'
 
 export class Renderer {
@@ -14,8 +14,7 @@ export class Renderer {
     if (process.env.NODE_ENV !== 'production') {
       if (!options) {
         warn(
-          'canvas options must be defined for descendants of context ' +
-          `<${vm._componentTag}>`
+          'canvas options must be defined for descendants of context '
         )
         return
       }

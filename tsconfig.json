@@ -1,17 +1,28 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "target": "es5",
     "lib": [
       "dom",
-      "es6"
+      "es5"
     ],
-    "noImplicitAny": true,
+    "allowJs": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "isolatedModules": false,
+    "noImplicitAny": false,
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "sourceMap": true
+    "removeComments": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
   },
   "include": [
-    "src/**/*.ts"
-  ]
+    "./sr/**/*.ts",
+    "./test/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": true
 }

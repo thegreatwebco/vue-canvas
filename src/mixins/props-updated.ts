@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import { ComponentOptions } from 'vue'
 import { pick } from '../utils'
 
@@ -7,9 +7,9 @@ export default {
     const hook = this.$options.propsUpdated
     if (typeof hook !== 'function') return
 
+      /*
     const propKeys = Object.keys(this.$options.props)
     let prevProps = pick(this, propKeys)
-
     this.$watch((vm: Vue) => {
       // check the update of any props 
       const isUpdated = propKeys.reduce((acc, key) => {
@@ -24,6 +24,7 @@ export default {
       prevProps = pick(this, propKeys)
       return prevProps
     }, hook)
+    */
   }
 } as ComponentOptions<Vue>
 

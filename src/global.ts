@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 
 // set merge strategy of canvas option
 const strategies = Vue.config.optionMergeStrategies
