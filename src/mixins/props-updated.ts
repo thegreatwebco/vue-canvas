@@ -7,6 +7,7 @@ export default {
     const hook = this.$options.propsUpdated
     if (typeof hook !== 'function') return
 
+      //TODO: Add back in!
       /*
     const propKeys = Object.keys(this.$options.props)
     let prevProps = pick(this, propKeys)
