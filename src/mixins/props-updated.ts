@@ -7,12 +7,11 @@ export default {
     const hook = this.$options.propsUpdated
     if (typeof hook !== 'function') return
 
-      //TODO: Add back in!
-      /*
-    const propKeys = Object.keys(this.$options.props)
+    const propKeys = Object.keys(this.$props)
     let prevProps = pick(this, propKeys)
-    this.$watch((vm: Vue) => {
-      // check the update of any props 
+    let vm = this
+    this.$watch(() => {
+      // check the update of any props
       const isUpdated = propKeys.reduce((acc, key) => {
         return acc || prevProps[key] !== (vm as any)[key]
       }, false)
@@ -25,7 +24,6 @@ export default {
       prevProps = pick(this, propKeys)
       return prevProps
     }, hook)
-    */
   }
 } as ComponentOptions<Vue>
 
