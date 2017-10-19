@@ -8,18 +8,18 @@
     </context-2d>
     <div class="">
       <div>
-        x <input type="number" v-model="a.x">
-        y <input type="number" v-model="a.y">
-        width <input type="number" v-model="a.width">
-        height <input type="number" v-model="a.height">
-        color <input type="color" v-model="a.color">
+        x <input type="number" v-model.number="a.x">
+        y <input type="number" v-model.number="a.y">
+        width <input type="number" v-model.number="a.width">
+        height <input type="number" v-model.number="a.height">
+        color <input type="color" v-model.number="a.color">
       </div>
       <div>
-        x <input type="number" v-model="b.x">
-        y <input type="number" v-model="b.y">
-        width <input type="number" v-model="b.width">
-        height <input type="number" v-model="b.height">
-        color <input type="color" v-model="b.color">
+        x <input type="number" v-model.number="b.x">
+        y <input type="number" v-model.number="b.y">
+        width <input type="number" v-model.number="b.width">
+        height <input type="number" v-model.number="b.height">
+        color <input type="color" v-model.number="b.color">
       </div>
     </div>
   </div>
