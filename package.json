@@ -35,7 +35,7 @@
     "@types/power-assert": "0.0.28",
     "@types/sinon": "^1.16.31",
     "awesome-typescript-loader": "^3.2.3",
-    "babel-core": "^6.16.0",
+    "babel-core": "^6.26.0",
     "babel-helper-vue-jsx-merge-props": "^2.0.2",
     "babel-loader": "^6.2.4",
     "babel-plugin-istanbul": "^4.1.1",

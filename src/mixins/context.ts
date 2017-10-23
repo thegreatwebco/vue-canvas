@@ -1,4 +1,4 @@
-import * as Vue from 'vue'
+import Vue from 'vue'
 import { ComponentOptions } from 'vue'
 
 import propertyMixin from './property'
